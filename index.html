@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .faq-item:hover {
+      background: #eef;
+    }
+
+    .faq-question {
+      font-weight: bold;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+ 
+     ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+    }
+    </style>
+    
+</head>
+<body>
+    
+
+     <h2>Minha Lista</h2>
+  <ul id="minhaLista">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+  </ul>
+
+  <button id="Add">Adicionar item</button>
+  <button id="remove">Remover último item</button>
+  <button id="Limpar">Limpar a lista toda</button>
+
+
+   <h2>FAQ - DOM</h2>
+
+  <div class="faq-item">
+    <p class="faq-question">O que é DOM?</p>
+    <p class="faq-answer">DOM (Document Object Model) é uma interface que representa documentos HTML e XML como uma estrutura de árvore, permitindo que linguagens como JavaScript interajam com o conteúdo, estrutura e estilo da página.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Para que serve?</p>
+    <p class="faq-answer">O DOM serve para que você possa acessar e manipular elementos da página com JavaScript, como alterar textos, estilos, atributos e até adicionar ou remover elementos dinamicamente.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-question">Como praticar?</p>
+    <p class="faq-answer">Você pode praticar manipulando o DOM em pequenos projetos como to-do lists, jogos simples, menus interativos ou qualquer funcionalidade que envolva interação com a página usando JavaScript.</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
