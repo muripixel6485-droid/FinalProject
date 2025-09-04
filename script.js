@@ -19,7 +19,7 @@
 
     btnLimpar.addEventListener("click", () => {
       lista.innerHTML = "";
-      contador = 1; // resetar contador se quiser
+      contador = 1; 
     });
 
 
@@ -33,5 +33,4 @@ const items = document.querySelectorAll('.faq-item');
         item.classList.toggle('active');
       });
     });
-
     
