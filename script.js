@@ -33,13 +33,13 @@ const items = document.querySelectorAll('.faq-item');
 
 items.forEach(item => {
   item.addEventListener('click', () => {
-    // Verifica se o item já está ativo
+    
     const isActive = item.classList.contains('active');
 
-    // Remove a classe 'active' de todos os itens
+    
     items.forEach(i => i.classList.remove('active'));
 
-    // Se o item não estava ativo antes, ativa ele agora
+    
     if (!isActive) {
       item.classList.add('active');
     }
