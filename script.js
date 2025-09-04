@@ -14,8 +14,8 @@ btnAdd.addEventListener("click", () => {
 btnRemove.addEventListener("click", () => {
   if (lista.lastElementChild) {
     lista.removeChild(lista.lastElementChild);
-    contador--; // Decrementa o contador também
-    if (contador < 1) contador = 1; // Garante que o contador não vá abaixo de 1
+    contador--; 
+    if (contador < 1) contador = 1; 
   }
 });
 
